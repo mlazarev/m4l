@@ -1,7 +1,6 @@
-# m4l
-## Max For Live Devices
+# Max For Live Devices
 
-A collection of free devices you can use inside Ableton Live.
+A collection of free **Max For Live** devices you are welcome to use in your **Ableton Live** projects.
 
 ## Lazmonizer
 
