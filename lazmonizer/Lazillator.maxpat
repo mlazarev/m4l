@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 415.0, 85.0, 1006.0, 913.0 ],
+		"rect" : [ 34.0, 77.0, 1452.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -62,30 +62,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 714.166726005885494, 89.000004300186163, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-38",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 207.0, 41.0, 22.0 ],
-					"text" : "set $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 96.0, 267.0, 49.0, 22.0 ],
-					"text" : "append"
 				}
 
 			}
@@ -171,7 +147,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 655.0, 435.166678071022034, 306.0, 74.0 ],
-					"text" : "Dev TODO Notes:\n[ ] Define and expose \"60\" as Floor Input\n[ ] Impliement and expose a Ceiling Input\n[X] Implement and expose a \"drunk\" rate\n[ ] Add Slew for sharp drunk changes"
+					"text" : "Dev TODO Notes:\n[ ] Implement and expose a Floor Input\n[ ] Implement and expose a Ceiling Input\n[X] Implement and expose a \"drunk\" rate\n[X] Add Slew for sharp drunk changes"
 				}
 
 			}
@@ -228,17 +204,6 @@
 					"patching_rect" : [ 47.250008046627045, 784.00000430018622, 50.0, 39.0 ],
 					"text" : "Left",
 					"textjustification" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 329.0, 183.000001311302185, 101.0, 20.0 ],
-					"text" : "ramp up in 10ms"
 				}
 
 			}
@@ -445,14 +410,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-33", 1 ],
+					"midpoints" : [ 326.666659235953603, 411.0, 116.0, 411.0 ],
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -460,6 +419,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
+					"order" : 1,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 0 ],
+					"midpoints" : [ 105.5, 411.0, 289.583340764046625, 411.0 ],
+					"order" : 0,
 					"source" : [ "obj-23", 0 ]
 				}
 
@@ -488,14 +457,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-129", 0 ],
-					"order" : 2,
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-130", 0 ],
+					"midpoints" : [ 105.5, 735.0, 66.750008046627045, 735.0 ],
 					"order" : 1,
 					"source" : [ "obj-33", 0 ]
 				}
@@ -503,17 +465,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-34", 0 ],
+					"destination" : [ "obj-130", 0 ],
+					"midpoints" : [ 105.5, 735.0, 132.083340764046625, 735.0 ],
 					"order" : 0,
 					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 234.5, 252.0, 105.5, 252.0 ],
-					"source" : [ "obj-38", 0 ]
 				}
 
 			}
@@ -527,15 +482,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-38", 0 ],
-					"midpoints" : [ 723.666726005885494, 144.0, 234.5, 144.0 ],
+					"destination" : [ "obj-23", 1 ],
+					"midpoints" : [ 723.666726005885494, 144.0, 180.0, 144.0, 180.0, 309.0, 130.5, 309.0 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
