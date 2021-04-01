@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1452.0, 929.0 ],
+		"rect" : [ 1954.0, 77.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -140,27 +140,14 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Courier New",
-					"id" : "obj-25",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 655.0, 435.166678071022034, 306.0, 74.0 ],
-					"text" : "Dev TODO Notes:\n[ ] Implement and expose a Floor Input\n[ ] Implement and expose a Ceiling Input\n[X] Implement and expose a \"drunk\" rate\n[X] Add Slew for sharp drunk changes"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 14.0,
 					"id" : "obj-17",
-					"linecount" : 6,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 655.0, 263.833333134651184, 302.0, 103.0 ],
-					"text" : "A single sine wave designed to be used in a series of harmonics at a specified frequency and a rate of \"drunken\" change in amplitude\n\nA void metronome input implies no change\nUse the Meter output to visualize the result"
+					"patching_rect" : [ 655.0, 263.833333134651184, 302.0, 55.0 ],
+					"text" : "A single sine wave designed to be used in a series of harmonics at a specified frequency and a rate of \"drunken\" change in amplitude"
 				}
 
 			}
