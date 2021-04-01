@@ -34,6 +34,8 @@ The oscillator which is used N times in the main device.
 
 
 ## Changelog
-v0.1 - Initial commit with a new **Rate** control.
+v1.0 - Initial release to [maxforlive.com](https://maxforlive.com/library/device/7152/lazmonizer) (April 1st, 2021)
 
 v0.2 - Added **Depth** of the steps (essentially modulation) as well as **Smooth** function to control the rate of ramp up to the next value.
+
+v0.1 - Initial commit with a new **Rate** control.
