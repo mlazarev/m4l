@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1946.0, 85.0, 1452.0, 929.0 ],
+		"rect" : [ 371.0, 118.0, 1452.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 96.0, 258.0, 49.0, 22.0 ],
+					"text" : "append"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 173.166726005885494, 205.0, 41.0, 22.0 ],
+					"text" : "set $1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bubble" : 1,
 					"bubbleside" : 2,
@@ -98,7 +122,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.083340764046625, 506.0, 291.0, 244.0 ]
+					"patching_rect" : [ 280.083340764046625, 536.0, 291.0, 244.0 ]
 				}
 
 			}
@@ -146,7 +170,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 655.0, 263.833333134651184, 302.0, 55.0 ],
+					"patching_rect" : [ 293.0, 477.99999569981378, 302.0, 55.0 ],
 					"text" : "A single sine wave designed to be used in a series of harmonics at a specified frequency and a rate of \"drunken\" change in amplitude"
 				}
 
@@ -158,7 +182,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 655.000007033348083, 229.833337434837347, 121.0, 34.0 ],
+					"patching_rect" : [ 293.000007033348083, 444.0, 121.0, 34.0 ],
 					"text" : "lazillator",
 					"textcolor" : [ 0.572549019607843, 0.145098039215686, 0.145098039215686, 1.0 ]
 				}
@@ -269,7 +293,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 317.166659235953603, 158.0, 41.0, 23.0 ],
+					"patching_rect" : [ 317.166659235953603, 188.0, 41.0, 23.0 ],
 					"text" : "$1 10"
 				}
 
@@ -283,7 +307,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 317.166659235953603, 227.000001311302185, 40.0, 23.0 ],
+					"patching_rect" : [ 317.166659235953603, 242.000001311302185, 40.0, 23.0 ],
 					"text" : "line~"
 				}
 
@@ -310,7 +334,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 96.0, 89.000004300186163, 30.0, 30.0 ]
 				}
 
@@ -397,6 +421,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 182.666726005885494, 241.0, 105.5, 241.0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 1 ],
 					"midpoints" : [ 326.666659235953603, 411.0, 116.0, 411.0 ],
 					"source" : [ "obj-20", 0 ]
@@ -417,6 +449,13 @@
 					"midpoints" : [ 105.5, 411.0, 289.583340764046625, 411.0 ],
 					"order" : 0,
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -462,22 +501,22 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-119", 2 ],
-					"midpoints" : [ 593.666726005885494, 134.0, 158.5, 134.0 ],
+					"midpoints" : [ 593.666726005885494, 141.0, 158.5, 141.0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 1 ],
-					"midpoints" : [ 723.666726005885494, 144.0, 180.0, 144.0, 180.0, 309.0, 130.5, 309.0 ],
+					"destination" : [ "obj-2", 0 ],
+					"midpoints" : [ 723.666726005885494, 157.0, 182.666726005885494, 157.0 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
